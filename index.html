@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+    <style>
+      .card {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>КОРЗИНА</h1>
+      <div class="card">
+        <h2>Дрель-шуруповерт</h2>
+        <img
+          src="https://cdn.vseinstrumenti.ru/images/goods/stroitelnyj-instrument/shurupoverty/1251492/98x88/54563837.jpg"
+          alt="Дрель" />
+        <p>код: 16168564</p>
+        <p>Аккумуляторная дрель-шуруповерт Dorkel DRA-12/1 Li DR-3402</p>
+        <p><span id="screwdriver">978</span> руб.</p>
+      </div>
+
+      <div class="card">
+        <h2>Кровельный угольник</h2>
+        <img
+          src="https://cdn.vseinstrumenti.ru/images/goods/ruchnoj-instrument/ruchnoj-izmeritelnyj-instrument/1522205/98x88/52558723.jpg"
+          alt="Угольник" />
+        <p>код: 16450702</p>
+        <p>Кровельный угольник Inforce 305 мм 06-11-75</p>
+        <p><span id="angle">1461</span> руб.</p>
+      </div>
+
+      <div class="card">
+        <h2>Фрезер</h2>
+        <img
+          src="https://cdn.vseinstrumenti.ru/images/goods/stroitelnyj-instrument/ruchnye-frezery/1221/98x88/52198078.jpg"
+          alt="Фрезер" />
+        <p>код: 1221</p>
+        <p>Фрезер DEWALT DW 621</p>
+        <p><span id="miller">28279</span> руб.</p>
+      </div>
+
+      <div class="card">
+        <h2>Набор отверток</h2>
+        <img
+          src="https://cdn.vseinstrumenti.ru/images/goods/ruchnoj-instrument/otvertki/2063099/98x88/71440387.jpg"
+          alt="Набор отверток" />
+        <p>код: 16915573</p>
+        <p>Набор отверток для точных работ Kranz RA-03, 25 предметов KR-12-4753</p>
+        <p><span id="kit">593</span> руб.</p>
+      </div>
+
+      <button id="button">Использовать купон на 20%</button>
+      <p>ИТОГО: <span id="total-value"></span></p>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
