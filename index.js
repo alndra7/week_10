@@ -1,16 +1,22 @@
-let priceScrewdriver = document.getElementById('screwdriver');
-let priceAngle = document.getElementById('angle');
-let priceKit = document.getElementById('kit');
-let priceMiller = document.getElementById('miller');
-let total = document.getElementById('total-value')
+const priceScrewdriver = document.getElementById('screwdriver');
+const priceAngle = document.getElementById('angle');
+const priceKit = document.getElementById('kit');
+const priceMiller = document.getElementById('miller');
+const total = document.getElementById('total-value')
 
-let totalPrice = +priceAngle.innerHTML + +priceScrewdriver.innerHTML + +priceKit.innerHTML + +priceMiller.innerHTML;
-console.log(totalPrice);
+const totalPrice = +priceAngle.innerHTML + +priceScrewdriver.innerHTML + +priceKit.innerHTML + +priceMiller.innerHTML;
 
 total.textContent = (totalPrice);
 
-button.addEventListener('click', () => {
-    let discount = totalPrice*0.80;
-    total.textContent = (discount); 
-  });
+function calc () {
+  const discount = totalPrice*0.80;
+  total.textContent = (discount); 
+}
+
+button.addEventListener('click', calc);
+
+//button.addEventListener('click', () => {
+  //const discount = totalPrice*0.80;
+    //total.textContent = (discount); 
+  //});
 
